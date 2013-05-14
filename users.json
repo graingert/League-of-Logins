@@ -1,0 +1,30 @@
+[
+    [
+        "CN=cso1g09,OU=UnderGrad,OU=ECSUsers,DC=ecs,DC=soton,DC=ac,DC=uk",
+        {
+            "gecos": [
+                "Christopher S Orchard"
+            ],
+            "logonCount": [
+                "1452"
+            ],
+            "ecsEmail": [
+                "cso1g09"
+            ]
+        }
+    ],
+    [
+        "CN=tag1g09,OU=UnderGrad,OU=ECSUsers,DC=ecs,DC=soton,DC=ac,DC=uk",
+        {
+            "gecos": [
+                "Thomas A Grainger"
+            ],
+            "logonCount": [
+                "554"
+            ],
+            "ecsEmail": [
+                "tag1g09"
+            ]
+        }
+    ]
+]

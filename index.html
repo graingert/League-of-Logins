@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="#">League of Logins</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>
+                League of Logins
+            </h1>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>
+                            User
+                        </th>
+                        <th>
+                            ECS ID
+                        </th>
+                        <th>
+                            Total Logins
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <script id="league-template" type="text/x-handlebars">
+                        {{#each .}}
+                            <tr>
+                                <td>
+                                    <img src="{{avatar}}" class="img-circle avatar"/>
+                                    <span class="name">{{name}}</span>
+                                </td>
+                                <td>
+                                    {{ecsid}}
+                                </td>
+                                <td>
+                                    {{login_count}}
+                                </td>
+                            </tr>
+                        {{/each}}
+                    </script>
+                </tbody>
+            </table>
+        </div>
+        <!--<script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/linq.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.7.2/URI.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
+        <script src="league.js"></script>
+    </body>
+</html>
