@@ -16,7 +16,7 @@ $(function(){
         template_tag.replaceWith(template(
             Enumerable.From(data)
                     .Where(function(item){return item[1].hasOwnProperty("logonCount");})
-                    .OrderBy(function(item){return parseInt(item[1].logonCount[0],10);})
+                    .OrderByDescending(function(item){return parseInt(item[1].logonCount[0],10);})
                     .Select(function(item){
                         return {
                             "name" : item[1].gecos[0],
