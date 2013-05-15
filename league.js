@@ -2,7 +2,7 @@ $(function(){
     "use strict";
     function gravatar(email){
         return URI("http://www.gravatar.com/avatar/")
-            .filename(email)
+            .filename(CryptoJS.MD5(email).toString())
             .suffix("jpg")
             .query({
                 "s": 60
