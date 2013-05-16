@@ -12,7 +12,7 @@ $(function(){
     var template_tag = $("#league-template");
     var template = Handlebars.compile(template_tag.html());
 
-    $.ajax("users.json", {"dataType":"json", "mimeType":"application/json"}).done(function(data){
+    $.ajax("http://linuxproj.ecs.soton.ac.uk/~tag1g09/users.php", {"dataType":"json", "mimeType":"application/json"}).done(function(data){
         template_tag.replaceWith(template(
             Enumerable.From(data)
                     .Where(function(item){return item[1].hasOwnProperty("logonCount");})
